@@ -1,13 +1,6 @@
-<!DOCTYPE html>
-<!--
-To change this license header, choose License Headers in Project Properties.
-To change this template file, choose Tools | Templates
-and open the template in the editor.
--->
 <html>
-    <head>
-        
-        
+<head>
+
     <!-- Latest compiled and minified CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -26,15 +19,12 @@ and open the template in the editor.
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
 
     <!-- CSS -->
-    <link rel="stylesheet" href="JSP-Pages/style.css">
-        
-        <title> upload </title>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    </head>
-    <body>
-        
-         <nav id="nav-bar" class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+  <!-- ################################################ NAVIGATION BAR ################################################ -->
+  <nav id="nav-bar" class="navbar navbar-expand-lg navbar-dark bg-dark">
 		
   <a id= "web-name" class="navbar-brand mb-0 h1" href="member.html"><img id = "web-icon" src="german-shepherd.svg" width="25" height="25" alt="">PupStudio</a>
 
@@ -56,10 +46,7 @@ and open the template in the editor.
       <li class="nav-item active">
           <a class="nav-link" href="#">Contacts</a>
       </li>
-	  <!-- Account -->
-	  <li class="nav-item active">
-		<a href="profile.html" class="nav-link"><i class="far fa-user"></i> Account</button></a>
-	  </li>
+
       <!-- Upload -->
       <li class="nav-item active">
 		<a href="upload.html" class="nav-link"><i class="fas fa-plus"></i> Upload</button></a>
@@ -72,18 +59,30 @@ and open the template in the editor.
  
   </nav>
 
-        <div class="container">
-        
-        
-        <div>
-            <form method="post" action="UploadImage" enctype="multipart/form-data">
-                Select file to upload:<br/>
-                 Image 1: <input type="file" name="data" id="browser"/> <br/><br/>
-                 Image 2: <input type="file" name="data" id="browser"/> <br/><br/>
-                 Image 3: <input type="file" name="data" id="browser"/><br/><br/>
-                <input type="submit" value="Upload" />
-            </form>
+
+	
+  <!-- ################################################ MAIN BODY ################################################-->
+<div class="container">
+
+
+
+      <div class="row text-center text-lg-left">
+
+        <div class="col-lg-3 col-md-4 col-xs-6">
+          <a href="edit.html" class="d-block mb-4 h-100">
+            <img class="img-fluid img-thumbnail" src="retriever.jpg" alt="">
+          </a>
         </div>
-        </div>
-    </body>
+   <form>
+				<div class="form-group">
+					<label for="Article">Article Name:</label>
+						<input type="text" class="form-control" id="Article">
+				</div>
+				<div class="form-group">
+					<label for="Tags">Tags:</label>
+						<input type="text" class="form-control" id="Tags" placeholder=" tag1, tag2, tag3">
+				</div>
+  </form>
+</body>
+
 </html>
