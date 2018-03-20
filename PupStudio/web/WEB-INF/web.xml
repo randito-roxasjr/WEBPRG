@@ -14,7 +14,7 @@ and open the template in the editor.
         <description>Location to store uploaded file</description> 
         <param-name>file-upload</param-name> 
         <param-value>
-           C:\Users\RanditoFaustino\Pictures\DUMP
+           C:\Users\Bryce Po\Desktop\
         </param-value> 
         </context-param>
 </web-app>
